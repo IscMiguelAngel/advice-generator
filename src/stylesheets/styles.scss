@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    background-color: hsl(217, 19%, 24%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 50px hsla(220, 16%, 11%, 0.5);;
+
+    &-header {
+        padding: 40px 20px 0 20px;
+        p {
+            color: hsl(150, 100%, 66%);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+
+    &-body {
+        padding: 0 20px;
+        min-height: 250px;
+        position: relative;
+        p {
+            font-size: 28px;
+            text-align: center;
+            color: hsl(193, 38%, 86%);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateY(-30%) translateX(-50%);
+            width: 90%;
+        }
+
+        img {
+            margin: 20px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-footer {
+        position: relative;
+        padding: 20px;
+        
+        button {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: none;
+            background-color: hsl(150, 100%, 66%);
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            outline: none;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: hsl(150, 100%, 75%);
+                box-shadow: 0 0 40px hsl(150, 100%, 75%);
+            }
+        }
+
+        button.load {
+            animation: load 0.3s infinite;
+        }
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: translateX(-50%) rotate(0);
+    }
+
+    25% {
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    75% {
+        transform: translateX(-50%) rotate(135deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(180deg);
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
