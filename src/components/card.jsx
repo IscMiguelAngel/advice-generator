@@ -32,7 +32,7 @@ const Card = () => {
             </div>
             <div className="card-footer">
                 <button type="button" onClick={ () => handleAdvice() } className={`${isLoading ? "load" : ""}`}>
-                    <img src={ icon_dice } alt="Icon button" /><p style={ { display: "none" } }>Click to generate</p>
+                    <img src={ icon_dice } alt="Icon button" /><span style={ { display: "none" } }>Click to generate</span>
                 </button> 
             </div>
         </div>
