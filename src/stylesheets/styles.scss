@@ -27,11 +27,13 @@ body {
 
     &-header {
         padding: 40px 20px 0 20px;
-        p {
+        h1 {
             color: hsl(150, 100%, 66%);
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 5px;
+            font-size: 1rem;
+            font-weight: lighter;
         }
     }
 
