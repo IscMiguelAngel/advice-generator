@@ -9,7 +9,7 @@ Esta es una solución al desafío [Advice Generatpr challenge on Frontend Mentor
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
   
 
